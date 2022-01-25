@@ -7,7 +7,7 @@ public class Hangman {
 	private RandomWord word = new RandomWord(); // 랜덤 클래스를 가져오기 위함
 	private Scanner scanner = new Scanner(System.in); // 사용자가 단어를 맞추기 위해 입력
 	private int remainTries = 7; // 시도횟수
-	private char lastGuess; // 유저입력문자(?)
+	private char lastGuess; // ?
 		
 	// 메소드 함수 run 만들기
 	public void run() { // 프로그램 시작 => 반복
@@ -47,7 +47,7 @@ public class Hangman {
 		// 입력받은 문자열에서 한 문자를 뽑아서 RandomWord 클래스에 전달(addGuess 메소드 이용)
 		System.out.print("한 문자 입력 : ");
 		String guess = scanner.nextLine();
-		//word.addGuess(guess.charAt(0)); // ????????
+		
 		lastGuess = guess.charAt(0); // ??????
 	}
 	
